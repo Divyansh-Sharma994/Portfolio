@@ -76,7 +76,7 @@ export const projectsData = [
     description:
       "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "The proposed solution is a centralized, AI-driven healthcare platform designed to transform health management for both individuals and healthcare providers. It leverages cutting-edge technology to integrate advanced predictive analytics, real time health tracking, and secure data sharing, providing a unified and dynamic approach to healthcare. By predicting potential health risks, offering personalized recommendations, and enabling continuous monitoring, the platform empowers users to take charge of their health proactively.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -86,11 +86,10 @@ export const projectsData = [
       { name: "Figma", icon: figmaicon },
       { name: "Canva", icon: canvaicon },
       { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "https://well-track-psi.vercel.app/",
+    githuburl: "https://github.com/Divyansh-Sharma994/well-track",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,29 +100,29 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Swasth-Saathi",
     description:
       "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "An AI-assisted Tele-medicine Kiosk for rural areas aims to bridge the healthcare access gap by providing remote medical consultations to underserved populations. In rural areas, access to healthcare professionals is often limited due to factors like distance, lack of infrastructure, and shortage of medical practitioners. Tele-medicine kiosks equipped with AI and digital technology enable patients to consult with doctors remotely, receive diagnoses, and get prescriptions without traveling long distances",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
+      
       { name: "React", icon: reacticon },
       { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
+      
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/Divyansh-Sharma994/Swasth-Saathi",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,11 +133,11 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Explore-World",
     description:
       "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "Welcome to the Explore World Project! This exciting initiative showcases beautiful places around the world, bringing together a community of travel enthusiasts and nature lovers. Here, users can explore breathtaking landscapes, historical landmarks, and hidden gems that might not be found in traditional travel guides. Our platform allows you to add your own favorite places, share personal stories and photographs, and inspire others with your unique experiences.A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
