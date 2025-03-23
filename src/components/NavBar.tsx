@@ -5,7 +5,6 @@ import ScrollToAnchor from "./Listener";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
-import LanguageSwitch from "./LanguageSwitch";
 
 const NavBar: React.FC = () => {
   const { theme } = useTheme();
@@ -42,7 +41,6 @@ const NavBar: React.FC = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
     handleResize();
 
     return () => {
@@ -50,11 +48,7 @@ const NavBar: React.FC = () => {
     };
   }, []);
 
-  const CustomNavLink: React.FC<CustomNavLinkProps> = ({
-    link,
-    children,
-    linkEn,
-  }) => {
+  const CustomNavLink: React.FC<CustomNavLinkProps> = ({ link, children, linkEn }) => {
     const [isHovered, setIsHovered] = useState(false);
     const isLinkActive = isHovered || linkEn === activeSection;
 
@@ -97,13 +91,12 @@ const NavBar: React.FC = () => {
       {!isMobileMenuActive && (
         <nav
           className={`max-lg:hidden flex-row flex justify-center items-center gap-24 font-semibold p-5 top-0 ${
-            isSticky && !isMobileMenuActive
-              ? `sticky top-10 z-50 ml-auto mr-auto  w-max  px-16 py-5 transition-all ease-in-out duration-100 rounded-full border border-white border-opacity-40  bg-opacity-70 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${
+            isSticky
+              ? `sticky top-10 z-50 ml-auto mr-auto w-max px-16 py-5 transition-all ease-in-out duration-100 rounded-full border border-white border-opacity-40 bg-opacity-70 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${
                   theme === "dark" ? "bg-darkblue" : "bg-white"
                 }`
               : ""
-          }
-   `}
+          }`}
         >
           {navLinks.map((link, index) => (
             <CustomNavLink key={index} link={link.hash} linkEn={link.en}>
@@ -113,7 +106,6 @@ const NavBar: React.FC = () => {
                     &lt;
                   </span>
                   {language === "DE" ? link.de : link.en}
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               ) : (
                 <div
@@ -123,18 +115,16 @@ const NavBar: React.FC = () => {
                   }}
                 >
                   {language === "DE" ? link.de : link.en}
-
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               )}
             </CustomNavLink>
           ))}
-          <LanguageSwitch />
         </nav>
       )}
+
       {isMobileMenuActive && (
         <nav
-          className={` max-lg:flex w-[100vw] flex-row justify-between fixed bottom-0 left-0 z-50 bg-darkblue p-10  text-center items-center transition-all ease-in-out duration-100 rounded-t-3xl bg-opacity-100 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${
+          className={`max-lg:flex w-[100vw] flex-row justify-between fixed bottom-0 left-0 z-50 bg-darkblue p-10 text-center items-center transition-all ease-in-out duration-100 rounded-t-3xl bg-opacity-100 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${
             theme === "dark" ? "bg-darkblue" : "bg-white"
           }`}
         >
@@ -146,7 +136,7 @@ const NavBar: React.FC = () => {
                 </div>
               ) : (
                 <div
-                  className="text-[2rem] flex flex-col items-center "
+                  className="text-[2rem] flex flex-col items-center"
                   onClick={() => {
                     setActiveSection(link.en);
                     setTimeOfLastClick(Date.now());
@@ -163,7 +153,6 @@ const NavBar: React.FC = () => {
               )}
             </CustomNavLink>
           ))}
-          <LanguageSwitch />
         </nav>
       )}
     </React.Fragment>

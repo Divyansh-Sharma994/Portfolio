@@ -40,12 +40,12 @@ import Privacy from "../../components/Privacy";
 export const headerIntroData = {
   title: {
     de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    en: "Hi, I'm Divyansh ",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Software Developer ",
   description: {
     de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    en: "I'm Divyansh, a Software developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for Software development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
@@ -72,7 +72,7 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Well Track",
     description:
       "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
@@ -208,12 +208,12 @@ export const skillsDataWeb = [
         icon: reacticon,
         color: "#61DAFB",
       },
-      {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
+      // {
+      //   title: "Next.js",
+      //   hash: "#Next.js",
+      //   icon: [nextjsicon, nextjsiconwhite],
+      //   color: ["#000000", "#FFFFFF"],
+      // },
       {
         title: "Node.js",
         hash: "#Node.js",
@@ -232,24 +232,24 @@ export const skillsDataWeb = [
         icon: mongodbicon,
         color: "#449C45",
       },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
-      },
+      // {
+      //   title: "Vue.js",
+      //   hash: "#Vue.js",
+      //   icon: vuejsicon,
+      //   color: "#4FC08D",
+      // },
       {
         title: "Express",
         hash: "#Express",
         icon: [expressicon, expressiconwhite],
         color: ["#000000", "#FFFFFF"],
       },
-      {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
-      },
+      // {
+      //   title: "SASS/SCSS",
+      //   hash: "#SASS/SCSS",
+      //   icon: sassscssicon,
+      //   color: "#CC6699",
+      // },
     ],
   },
 ] as const;
@@ -259,12 +259,12 @@ export const skillsDataDesign = [
     skillsTitle: "Design",
     skills: [
       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
-      },
+      // {
+      //   title: "Adobe XD",
+      //   hash: "#Adobe XD",
+      //   icon: adobexdicon,
+      //   color: "#FF61F6",
+      // },
       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
     ],
   },
@@ -310,23 +310,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
+  link: "mailto:divyansh.sharma.1975@gmail.com",
   text: "myemail@com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/divyanshsharma99/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/Divyansh-Sharma994",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:divyansh.sharma.1975@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -371,9 +371,9 @@ export const aboutMeData = {
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "The longing of My Heart",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "When I'm not navigating the digital world, I explore the fascinating realm of technology and nature. Exploring the unknown gives me a thrill.",
       icon: hardwareicon,
     },
     {
@@ -385,7 +385,7 @@ export const aboutMeData = {
     {
       title: "The Joy of Discovery as a Life Motto",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
+        "My journey as a Software developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
       icon: travelicon,
     },
   ],
@@ -470,7 +470,7 @@ export const contactData = {
   privacyOptIn: {
     checkbox: {
       de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      en: "I agree that Divyansh may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",

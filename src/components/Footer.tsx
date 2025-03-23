@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-darkblue flex justify-around items-center gap-10 p-10 max-lg:flex-col max-lg:pb-48 relative z-[1]">
       <div className="flex gap-10">
-        {FooterLinks.map((link, index) => (
+        {FooterLinks.filter(link => link.en !== "Imprint" && link.en !== "Privacy").map((link, index) => (
           <Popup
             trigger={
               <Link
@@ -87,10 +87,8 @@ const Footer: React.FC = () => {
           </Link>
         ))}
       </div>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LazyServiceStatus />
-        </Suspense>
+      <div className="text-4xl">
+        made with love by divyansh....
       </div>
     </footer>
   );

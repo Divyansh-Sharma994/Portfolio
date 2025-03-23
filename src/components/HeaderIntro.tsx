@@ -12,6 +12,16 @@ const HeaderIntro: React.FC = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const handleResumeDownload = () => {
+    const resumeUrl = "/Divyansh_Sharma_Resume.pdf"; // Update if necessary
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Divyansh_Sharma_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
@@ -39,19 +49,28 @@ const HeaderIntro: React.FC = () => {
       </p>
 
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
-        {headerIntroData.buttons.map((button, index) => (
-          <Button
-            key={index}
-            label={language === "DE" ? button.label.de : button.label.en}
-            iconSVG={button.icon}
-            link={`#${button.name.toLocaleLowerCase()}`}
-            buttoncolor={button.color}
-            onClick={() => {
-              setActiveSection(button.name);
-              setTimeOfLastClick(Date.now());
-            }}
-          />
-        ))}
+        {headerIntroData.buttons.map((button, index) =>
+          button.name.toLowerCase() === "projects" ? (
+            <Button
+              key={index}
+              label={language === "DE" ? button.label.de : button.label.en}
+              iconSVG={button.icon}
+              link={`#${button.name.toLocaleLowerCase()}`}
+              buttoncolor={button.color}
+              onClick={() => {
+                setActiveSection(button.name);
+                setTimeOfLastClick(Date.now());
+              }}
+            />
+          ) : null
+        )}
+        {/* Download Resume Button */}
+        <button
+          onClick={handleResumeDownload}
+          className="bg-orange text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-lightblue transition-all duration-500 transform hover:scale-110"
+        >
+          Download Resume
+        </button>
       </div>
       <div className="scroll-down-container animate-bounce flex gap-6">
         <BsMouse className="text-[2.6rem]" />
