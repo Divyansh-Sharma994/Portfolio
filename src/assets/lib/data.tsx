@@ -153,8 +153,8 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "",
+    githuburl: "https://github.com/Divyansh-Sharma994/explore_world",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
